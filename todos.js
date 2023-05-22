@@ -76,5 +76,3 @@ function statusupdate(Mycheckbox,LabelId){
         lb.classList.remove("checked");
     }
 }
-
-
