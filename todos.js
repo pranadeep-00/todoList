@@ -10,6 +10,7 @@ function getText(){
         idNo: count,
     }
     createlistElements(newTodo);
+    userInput.value="";
 
 }
 
