@@ -3,6 +3,10 @@ let itemscontainer = document.getElementById("itemcontainer");
 let count = 1;
 function getText(){
     let userInput = document.getElementById("myTextBox");
+    if(userInput.value===""){
+        alert("Enter valid message");
+        return;
+    }
     let uservalue =userInput.value;
     count =count+1;
     let newTodo = {
@@ -72,4 +76,5 @@ function statusupdate(Mycheckbox,LabelId){
         lb.classList.remove("checked");
     }
 }
+
 
