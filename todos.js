@@ -1,17 +1,13 @@
 let itemscontainer = document.getElementById("itemcontainer");
 
-
-let todolist= [
-
-]
-let count = todolist.length;
+let count = 1;
 function getText(){
     let userInput = document.getElementById("myTextBox");
     let uservalue =userInput.value;
-
+    count =count+1;
     let newTodo = {
         text: uservalue,
-        idNo: count+1,
+        idNo: count,
     }
     createlistElements(newTodo);
 
@@ -64,9 +60,6 @@ function createlistElements(n){
     delcontainer.appendChild(deleteicon);
 }
 
-for( let r of todolist){
-    createlistElements(r);
-}
 
 function statusupdate(Mycheckbox,LabelId){
     let cb= document.getElementById(Mycheckbox);
@@ -78,5 +71,4 @@ function statusupdate(Mycheckbox,LabelId){
         lb.classList.remove("checked");
     }
 }
-
 
