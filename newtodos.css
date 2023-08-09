@@ -1,0 +1,73 @@
+h1{
+  text-align: center;
+}
+.textbox{
+  width: 100%;
+  height: 25px;
+  margin-bottom: 15px;
+}
+.but:hover{
+  background: #ff96ad;
+  box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0  200px #ff96ad;
+}
+.tasks{
+  width: 20px;
+  height: 20px;
+  margin-top: 12px;
+   margin-right: 12px;
+}
+.todo-items-container {
+  margin: 0px;
+  padding: 0px;
+}
+.todo-item-container {
+  margin-top: 15px;
+}
+.label-container {
+  background-color: #e6f6ff;
+  width: 100%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 4px;
+}
+.checkbox-label {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  width: 82%;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+.delete-icon-container {
+  text-align: right;
+  width: 18%;
+}
+.delete-icon {
+  padding: 15px;
+}
+.checked{
+  text-decoration: line-through;
+}
+button{
+  position: relative;
+  border: none;
+  transition: .4s ease-in;
+  z-index: 1;
+}
+button::before,
+button::after{
+  position:absolute;
+  content:"";
+  z-index: -1;
+}
+h3{
+  padding-top: 10px;
+}
